@@ -1,0 +1,57 @@
+{
+  "name": "http-mcp-simple-math-server",
+  "version": "0.0.1",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/server.ts",
+    "dev": "fastmcp dev src/server.ts",
+    "lint": "prettier --check . && eslint . && tsc --noEmit",
+    "test": "vitest run",
+    "format": "prettier --write . && eslint --fix ."
+  },
+  "keywords": [
+    "mcp",
+    "mcp/simple-math",
+    "http-streamable"
+  ],
+  "repository": {
+    "url": "https://github.com/passive-radio/http-mcp-simple-math-server"
+  },
+  "author": "passive-radio (srccreator@gmail.com)",
+  "homepage": "https://github.com/passive-radio/http-mcp-simple-math-server",
+  "type": "module",
+  "license": "MIT",
+  "description": "A simple math MCP server",
+  "dependencies": {
+    "fastmcp": "^1.27.3",
+    "zod": "^3.24.4"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.26.0",
+    "@modelcontextprotocol/sdk": "^1.11.1",
+    "@tsconfig/node22": "^22.0.1",
+    "@types/node": "^22.0.0",
+    "@types/react-native": "^0.73.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-perfectionist": "^4.12.3",
+    "jiti": "^2.4.2",
+    "prettier": "3.5.3",
+    "semantic-release": "^24.2.3",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.0",
+    "vitest": "^3.1.3"
+  }
+}
