@@ -43,7 +43,6 @@
     "@modelcontextprotocol/sdk": "^1.11.1",
     "@tsconfig/node22": "^22.0.1",
     "@types/node": "^22.0.0",
-    "@types/react-native": "^0.73.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-perfectionist": "^4.12.3",
     "jiti": "^2.4.2",
